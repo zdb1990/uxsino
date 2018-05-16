@@ -1,0 +1,16 @@
+@import "./../../assets/styles/common";
+.login-body {
+    width: 100%;
+    height: 100%;
+    background-color: #2d3a4b;
+    overflow: hidden;
+}
+
+.login-box {
+    margin-top: 200px;
+    .login-from-submit {
+        width: 100%;
+        height: 330px;
+        background-color: #ffffff;
+    }
+}

@@ -7,10 +7,9 @@
 }
 
 .login-box {
-    margin-top: 200px;
-    .login-from-submit {
-        width: 100%;
-        height: 330px;
-        background-color: #ffffff;
-    }
+    width: 350px;
+    height: 250px;
+    margin: 200px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
 }

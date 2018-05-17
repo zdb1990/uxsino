@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { SharedModule } from './shared/shared.module';
+import { AutoModule } from './auto/auto.module';
 
 @NgModule({
   declarations: [
@@ -11,9 +10,8 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
-    ButtonModule,
     AppRoutingModule,
-    SharedModule,
+    AutoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

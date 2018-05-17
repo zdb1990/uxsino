@@ -1,5 +1,42 @@
 <div class="login-body">
     <div class="login-box">
-        <!-- <form></form> -->
+        <div class="user-title">
+            Login-form
+        </div>
+        <form [formGroup]="userMessage" class="login-submit">
+            <div class="user-box">
+                <div class="user-list">
+                    <div class="ui-inputgroup">
+                        <span class="ui-inputgroup-addon"><i class="fa fa-user-o"></i></span>
+                        <input formControlName="name" type="text" pInputText placeholder="请输入用户名">
+                    </div>
+                    <div class="error-box">
+                        <div class="error-message" *ngIf="userMessage.hasError('required','name')">
+                            用户名不能为空
+                        </div>
+                        <div class="error-message" *ngIf="userMessage.hasError('maxlength','name')">
+                            用户名最多输入6位
+                        </div>
+                    </div>
+                </div>
+                <div class="user-list">
+                    <div class="ui-inputgroup">
+                        <span class="ui-inputgroup-addon"><i class="fa fa-key fa-fw"></i></span>
+                        <input formControlName="password" type="password" pInputText placeholder="请输入密码">
+                    </div>
+                    <div class="error-box">
+                        <div class="error-message" *ngIf="userMessage.hasError('required','password')">
+                            密码不能为空
+                        </div>
+                        <div class="error-message" *ngIf="userMessage.hasError('minlength','password')">
+                            密码的最少长度8位
+                        </div>
+                    </div>
+                </div>
+                <div class="user-list">
+                    <p-button label="登陆" class="login-submit"></p-button>
+                </div>
+            </div>
+        </form>
     </div>
 </div>

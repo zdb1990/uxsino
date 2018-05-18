@@ -38,9 +38,10 @@
                     </div>
                 </div>
                 <div class="user-list">
-                    <p-button label="登陆" class="login-submit"></p-button>
+                    <p-button label="登陆" class="login-submit" (click)="showSuccess()"></p-button>
                 </div>
             </div>
         </form>
+        <p-growl [(value)]="msgs"></p-growl>
     </div>
 </div>

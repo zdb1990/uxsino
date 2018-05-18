@@ -4,6 +4,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
+import { AccordionModule } from 'primeng/accordion';     // accordion and accordion tab
+import { GrowlModule } from 'primeng/growl';
 @NgModule({
 	imports: [
 		ReactiveFormsModule,
@@ -11,6 +13,8 @@ import { InputTextModule } from 'primeng/inputtext';
 		CommonModule,
 		ButtonModule,
 		InputTextModule,
+		AccordionModule,
+		GrowlModule
 	],
 	exports: [],
 	declarations: [

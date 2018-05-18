@@ -1,13 +1,14 @@
 import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 
-
 @NgModule({
     imports: [
-        SharedModule
+        SharedModule,
     ],
     exports: [],
     declarations: [],
-    providers: [],
+    providers: [
+
+    ],
 })
 export class AutoModule { }

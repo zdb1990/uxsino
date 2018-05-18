@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AutoModule } from './auto/auto.module';
-
+import { HomeModule } from './components/home/home.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,6 +12,7 @@ import { AutoModule } from './auto/auto.module';
     BrowserModule,
     AppRoutingModule,
     AutoModule,
+    HomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,3 @@
-import { AutoComponent } from './../auto/auto.component';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -6,6 +5,7 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { AccordionModule } from 'primeng/accordion';     // accordion and accordion tab
 import { GrowlModule } from 'primeng/growl';
+import { AutoComponent } from './../auto/auto.component';
 @NgModule({
 	imports: [
 		ReactiveFormsModule,
@@ -14,11 +14,11 @@ import { GrowlModule } from 'primeng/growl';
 		ButtonModule,
 		InputTextModule,
 		AccordionModule,
-		GrowlModule
+		GrowlModule,
 	],
 	exports: [],
 	declarations: [
-		AutoComponent,
+		AutoComponent
 	],
 	providers: [],
 })

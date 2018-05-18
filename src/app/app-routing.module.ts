@@ -4,7 +4,8 @@ import { AutoComponent } from './auto/auto.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: 'login', component: AutoComponent }
+  { path: 'login', component: AutoComponent },
+  { path: 'home', loadChildren: './components/home/home-routing.module#HomeRoutingModule' }
 ];
 
 @NgModule({

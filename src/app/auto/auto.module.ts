@@ -1,5 +1,5 @@
-import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
+import { SharedModule } from './../shared/shared.module';
 
 @NgModule({
     imports: [
@@ -7,8 +7,6 @@ import { NgModule } from '@angular/core';
     ],
     exports: [],
     declarations: [],
-    providers: [
-
-    ],
+    providers: [],
 })
 export class AutoModule { }

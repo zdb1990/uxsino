@@ -4,10 +4,10 @@ import { HomeComponent } from './home.component';
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { SlideComponent } from './common/slide/slide.component';
-import { CommonModule } from '@angular/common';
 const routes: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent },
+    // { path: '', redirectTo: '/home', pathMatch: 'full' },
+    // { path: 'home', component: HomeComponent },
+    // { path: '', component: HomeComponent }
 ];
 
 @NgModule({

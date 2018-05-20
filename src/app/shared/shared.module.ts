@@ -6,6 +6,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { AccordionModule } from 'primeng/accordion';     // accordion and accordion tab
 import { GrowlModule } from 'primeng/growl';
 import { AutoComponent } from './../auto/auto.component';
+import { PanelMenuModule } from 'primeng/panelmenu';
+import { DropdownModule } from 'primeng/dropdown';
 @NgModule({
 	imports: [
 		ReactiveFormsModule,
@@ -15,10 +17,12 @@ import { AutoComponent } from './../auto/auto.component';
 		InputTextModule,
 		AccordionModule,
 		GrowlModule,
+		PanelMenuModule,
+		DropdownModule
 	],
 	exports: [],
 	declarations: [
-		AutoComponent
+		AutoComponent,
 	],
 	providers: [],
 })

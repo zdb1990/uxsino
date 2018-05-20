@@ -1,0 +1,19 @@
+@import "../../../../../assets/styles/common";
+:host::ng-deep {
+    .ui-menubar {
+        line-height: 40px;
+        background: #2d3a4b;
+        color: #ffffff; // padding: 4rem;
+    }
+    .ui-menubar-custom {
+        padding: 0;
+        margin-right: 20px;
+    }
+}
+
+.slide-box {
+    font-size: 20px;
+    .slide-icon {
+        margin-left: 10px;
+    }
+}

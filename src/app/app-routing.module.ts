@@ -1,3 +1,4 @@
+import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AutoComponent } from './auto/auto.component';
@@ -5,7 +6,7 @@ import { AutoComponent } from './auto/auto.component';
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: AutoComponent },
-  { path: 'home', loadChildren: './components/home/home-routing.module#HomeRoutingModule' }
+  { path: 'home', component: HomeComponent }
 ];
 
 @NgModule({
@@ -13,4 +14,3 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule { }
-

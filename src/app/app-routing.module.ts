@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: AutoComponent },
   { path: 'home', component: HomeComponent }
+  // { path: 'home', loadChildren: '../app/components/home/home-routing.module#HomeRoutingModule' }
 ];
 
 @NgModule({

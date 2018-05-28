@@ -7,6 +7,7 @@ import { AccordionModule } from 'primeng/accordion';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { DropdownModule } from 'primeng/dropdown';
+import { CommonModule } from '@angular/common';
 @NgModule({
     imports: [
         SharedModule,
@@ -15,7 +16,8 @@ import { DropdownModule } from 'primeng/dropdown';
         AccordionModule,
         ButtonModule,
         InputTextModule,
-        DropdownModule
+        DropdownModule,
+        CommonModule
     ],
     exports: [
         ...routedComponents
